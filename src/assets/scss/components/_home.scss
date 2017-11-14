@@ -13,4 +13,20 @@
       text-transform: uppercase;
     }
   }
+  .contact-menu {
+    position: absolute;
+    bottom: rem-calc(50);
+    right: rem-calc(100);
+    span {
+      font-size: rem-calc(16);
+      font-family: $bold;
+      padding-left: rem-calc(20);
+      a {
+        color: $secondary-light;
+      }
+      a:hover {
+        color: $white;
+      }
+    }
+  }
 }
