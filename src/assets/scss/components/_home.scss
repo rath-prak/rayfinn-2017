@@ -1,0 +1,16 @@
+.home-wrapper {
+  background: $primary;
+  display: flex;
+  align-items: center;
+
+  .home-content {
+    color: $white;
+    h1 {
+      font-family: $black;
+      color: $accent;
+    }
+    h5 {
+      text-transform: uppercase;
+    }
+  }
+}

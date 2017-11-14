@@ -1,0 +1,31 @@
+.nav-wrapper {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  z-index: 5;
+
+  .logo {
+    padding: rem-calc(50) 0 0 rem-calc(100);
+    img {
+      width: rem-calc(160);
+    }
+  }
+
+  .portfolio-menu {
+    padding: rem-calc(50) rem-calc(100) 0;
+      .portfolio-btn {
+        color: $white;
+        font-family: $black;
+        font-size: rem-calc(18);
+        margin: 0;
+        cursor: pointer;
+      }
+      .portfolio-btn-underline {
+        height: rem-calc(3);
+        width: rem-calc(104);
+        transform: scaleX(0);
+        background: $accent;
+      }
+  }
+}

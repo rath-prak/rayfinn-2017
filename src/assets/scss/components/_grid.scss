@@ -1,0 +1,9 @@
+// header container
+
+.full-header {
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  max-height: rem-calc(1350);
+  min-height: rem-calc(550);
+}
