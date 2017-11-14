@@ -1,0 +1,31 @@
+// FONTS / Typography
+
+@font-face { font-family: proxima_thin; src: url(../fonts/Proxima-Nova-Thin.otf);}
+@font-face { font-family: proxima_light; src: url(../fonts/Proxima-Nova-Light.otf);}
+@font-face { font-family: proxima_light_italic; src: url(../fonts/Proxima-Nova-Light-Italic.otf);}
+@font-face { font-family: proxima_medium; src: url(../fonts/Proxima-Nova-Regular.otf);}
+@font-face { font-family: proxima_bold; src: url(../fonts/Proxima-Nova-Bold.otf);}
+@font-face { font-family: proxima_black; src: url(../fonts/Proxima-Nova-Black.otf);}
+
+$thin: proxima_thin, sans-serif;
+$body: proxima_light, sans-serif;
+$body-italic: proxima_light_italic, sans-serif;
+$medium: proxima_medium, sans-serif;
+$bold: proxima_bold, sans-serif;
+$black: proxima_black, sans-serif;
+
+$header-font-family: $bold;
+$body-font-family: $body, Helvetica, Roboto, Arial, sans-serif;
+
+//Global Typography
+//-----------------
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $bold;
+  color: $color-text-primary;
+}
+p {
+  font-family: $medium;
+  font-size: rem-calc(20);
+  color: $color-text-primary;
+}

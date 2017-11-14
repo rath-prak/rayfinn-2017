@@ -29,3 +29,22 @@
       }
   }
 }
+
+//overlay-navigation
+.overlay-nav {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: $secondary;
+  z-index: 100;
+  transform: translateY(-100%);
+  span {
+    color: $white;
+    font-family: $bold;
+    position: absolute;
+    top: rem-calc(50);
+    right: rem-calc(100);
+    text-transform: uppercase;
+    font-size: rem-calc(18);
+  }
+}
