@@ -37,7 +37,19 @@
   height: 100vh;
   background: $secondary;
   z-index: 100;
-  transform: translateY(-100%);
+  display: flex;
+  align-items: center;
+  .nav-overly-item {
+    flex-basis: 25%;
+  }
+  // transform: translateY(-100%);
+  h1 {
+    font-family: $black;
+    color: $accent;
+    font-size: rem-calc(30);
+    text-align: center;
+    padding: rem-calc(30);
+  }
   span {
     color: $white;
     font-family: $bold;
