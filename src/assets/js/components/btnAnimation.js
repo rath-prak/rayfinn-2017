@@ -1,6 +1,6 @@
 const btnAnimation = () => {
-  var portfolioBtn = document.querySelector('.portfolio-btn');
-  var portfolioBtnUnderline = document.querySelector('.portfolio-btn-underline');
+  let portfolioBtn = document.querySelector('.portfolio-btn');
+  let portfolioBtnUnderline = document.querySelector('.portfolio-btn-underline');
 
   portfolioBtn.addEventListener('mouseover', () => {
     TweenMax.to(portfolioBtnUnderline, 0.5, {

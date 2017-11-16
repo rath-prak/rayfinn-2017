@@ -39,10 +39,10 @@
   z-index: 100;
   display: flex;
   align-items: center;
+  top: -100%;
   .nav-overly-item {
     flex-basis: 25%;
   }
-  // transform: translateY(-100%);
   h1 {
     font-family: $black;
     color: $accent;
