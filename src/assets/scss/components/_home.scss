@@ -60,12 +60,23 @@
 // home content
 .home-content {
   .aside-graphic {
-    height: rem-calc(450);
+    height: rem-calc(500);
     background: $primary;
+    padding: rem-calc(30);
+    img {
+      margin-top: rem-calc(30);
+      width: 50%;
+    }
   }
   .aside-article {
     width: calc(#{$global-width}/2);
-    padding-top: rem-calc(60);
-    padding-left: rem-calc(60);
+    padding: rem-calc(60);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
+}
+
+.home-content2 {
+  height: 500px;
 }

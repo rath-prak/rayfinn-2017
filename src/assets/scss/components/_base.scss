@@ -29,3 +29,17 @@ p {
   font-size: rem-calc(20);
   color: $color-text-primary;
 }
+
+// Typography headings
+//-----------------
+
+.sub-heading {
+  font-family: $black;
+  text-transform: uppercase;
+  color: $accent;
+  margin: 0px;
+}
+
+.main-heading {
+  font-family: $black;
+}
