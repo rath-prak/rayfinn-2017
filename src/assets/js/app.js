@@ -15,26 +15,20 @@ import Foundation from 'foundation-sites';
 //Navigation animation
 menuBtnAnimation();
 overlayNav();
-
-//Footer - scroll to top button
 scrollToTop();
 
+TweenMax.set('.item-fade', {y: 100, opacity: 0})
+
+const animateTest = () => {
+  TweenMax.staggerTo('.item-fade', 0.5, { y:0, opacity: 1 }, 0.2);
+}
 
 let wayTest = document.querySelector('#waypoint-test');
-
-TweenMax.set(wayTest, {
-  y: -50,
-  opacity: 0,
-})
-
 
 const waypoint = new Waypoint({
   element: wayTest,
   handler: function() {
-    TweenMax.to(wayTest, 1, {
-      y: 0,
-      opacity: 1,
-    })
+    animateTest();
   }, offset: '50%'
 })
 
