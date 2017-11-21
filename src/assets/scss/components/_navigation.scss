@@ -11,22 +11,21 @@
       width: rem-calc(160);
     }
   }
+}
 
-  .portfolio-menu {
-    padding: rem-calc(50) rem-calc(100) 0;
-      .portfolio-btn {
-        color: $white;
-        font-family: $black;
-        font-size: rem-calc(18);
-        margin: 0;
-        cursor: pointer;
-      }
-      .portfolio-btn-underline {
-        height: rem-calc(3);
-        width: rem-calc(104);
-        transform: scaleX(0);
-        background: $accent;
-      }
+.portfolio-menu {
+  padding: rem-calc(50) rem-calc(100) 0;
+  .portfolio-btn {
+    color: $white;
+    font-family: $black;
+    font-size: rem-calc(18);
+    margin: 0;
+    cursor: pointer;
+  }
+  .portfolio-btn-underline {
+    height: rem-calc(3);
+    transform: scaleX(0);
+    background: $accent;
   }
 }
 
@@ -50,9 +49,10 @@
     text-align: center;
     padding: rem-calc(30);
   }
-  span {
+  .close-menu {
     color: $white;
-    font-family: $bold;
+    font-family: $black;
+    cursor: pointer;
     position: absolute;
     top: rem-calc(50);
     right: rem-calc(100);

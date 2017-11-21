@@ -31,6 +31,20 @@
       }
     }
   }
+  .home-blurb {
+    position: absolute;
+    bottom: rem-calc(50);
+    left: rem-calc(100);
+    text-transform: uppercase;
+    p {
+      color: $secondary-light;
+      font-size: rem-calc(14);
+      margin: 0;
+    }
+    span {
+      font-size: rem-calc(12);
+    }
+  }
 }
 
 //home about section

@@ -1,20 +1,38 @@
 import $ from 'jquery';
 import whatInput from 'what-input';
 import {TweenMax} from 'gsap';
+import waypoints from 'waypoints/lib/noframework.waypoints.min';
 
 //navigation
-import btnAnimation from './components/btnAnimation'
+import menuBtnAnimation from './components/menuBtnAnimation'
 import overlayNav from './components/overlayNav'
 
 window.$ = $;
 
 import Foundation from 'foundation-sites';
 
-// button animatio for main nav 'PORTFOLIO Button'
-btnAnimation();
+//Navigation animation
+menuBtnAnimation();
 overlayNav();
-// overlay navigation
 
+let wayTest = document.querySelector('#waypoint-test');
+
+TweenMax.set(wayTest, {
+  y: -50,
+  opacity: 0,
+})
+
+
+
+const waypoint = new Waypoint({
+  element: wayTest,
+  handler: function() {
+    TweenMax.to(wayTest, 1, {
+      y: 0,
+      opacity: 1,
+    })
+  }, offset: '50%'
+})
 
 
 $(document).foundation();

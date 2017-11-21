@@ -1,4 +1,4 @@
-const btnAnimation = () => {
+const menuBtnAnimation = () => {
   let portfolioBtn = document.querySelector('.portfolio-btn');
   let portfolioBtnUnderline = document.querySelector('.portfolio-btn-underline');
 
@@ -17,4 +17,4 @@ const btnAnimation = () => {
   })
 }
 
-export default btnAnimation;
+export default menuBtnAnimation;
